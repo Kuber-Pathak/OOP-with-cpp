@@ -15,11 +15,11 @@ class Convert{
             }
 };
 class Height{
-    float ft,inch;
+    double ft,inch;
     public:
         Height(){
         }
-        Height(float a,float b){
+        Height(double a,double b){
             ft=a;
             inch=b;
         }
