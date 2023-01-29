@@ -1,62 +1,67 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 class Student
 {
-    protected:
+protected:
     char name[50];
     int roll;
-    public:
+
+public:
     void get_data()
     {
-        cout<<"Enter name"<<endl;
-        cin>>name;
-        cout<<"Enter roll"<<endl;
-        cin>>roll;
+        cout << "Enter name" << endl;
+        cin >> name;
+        cout << "Enter roll" << endl;
+        cin >> roll;
     }
     void display_data()
     {
-        cout<<"Name: "<<name<<endl;
-        cout<<"Roll: "<<roll<<endl;
+        cout << "Name: " << name << endl;
+        cout << "Roll: " << roll << endl;
     }
 };
-class Test:public Student
+class Test : public Student
 {
-    protected:
-    int sub1,sub2;
-    public:
+protected:
+    int sub1, sub2;
+
+public:
     void get_data()
     {
-        cout<<"Enter the marks of sub1 and sub2"<<endl;
-        cin>>sub1>>sub2;
+        cout << "Enter the marks of sub1 and sub2" << endl;
+        cin >> sub1 >> sub2;
     }
     void display_data()
     {
-        cout<<"Sub1= "<<sub1<<endl<<"Sub2= "<<sub2<<endl;
+        cout << "Sub1= " << sub1 << endl
+             << "Sub2= " << sub2 << endl;
     }
 };
 class Sports
 {
-    protected:
+protected:
     int score;
-    public:
+
+public:
     void get_data()
     {
-        cout<<"Enter Score"<<endl;
-        cin>>score;
+        cout << "Enter Score" << endl;
+        cin >> score;
     }
     void display_data()
     {
-        cout<<"Score= "<<score<<endl;
+        cout << "Score= " << score << endl;
     }
 };
-class Result:public Test, public Sports
+class Result : public Test, public Sports
 {
     int total;
-    public:
+
+public:
     void display_data()
     {
-        total=sub1+sub2+score;
-        cout<<"Total= "<<total<<endl;
+        total = sub1 + sub2 + score;
+        cout << "Total= " << total << endl;
     }
 };
 int main()

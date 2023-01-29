@@ -1,43 +1,46 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 class M
 {
-    protected:
+protected:
     int x;
-    public:
+
+public:
     void get_value()
     {
-        cout<<"Enter the value of x"<<endl;
-        cin>>x;
+        cout << "Enter the value of x" << endl;
+        cin >> x;
     }
     void display_value()
     {
-        cout<<"x ="<<x<<endl;
+        cout << "x =" << x << endl;
     }
 };
 class N
 {
-    protected:
+protected:
     int y;
-    public:
+
+public:
     void get_value()
     {
-        cout<<"Enter the value of y"<<endl;
-        cin>>y;
+        cout << "Enter the value of y" << endl;
+        cin >> y;
     }
     void display_value()
     {
-        cout<<"y ="<<y<<endl;
+        cout << "y =" << y << endl;
     }
 };
-class P:public M,public N
+class P : public M, public N
 {
     int total;
-    public:
+
+public:
     void display_value()
     {
-        total=x+y;
-        cout<<"Total = "<<total;
+        total = x + y;
+        cout << "Total = " << total;
     }
 };
 int main()
