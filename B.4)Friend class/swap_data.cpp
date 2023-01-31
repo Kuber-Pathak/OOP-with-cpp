@@ -15,7 +15,7 @@ public:
     {
         cout << " A = " << a << endl;
     }
-    void max(B);
+    void swap(B);
 };
 class B
 {
@@ -33,12 +33,14 @@ public:
     }
     friend A;
 };
-void A::max(B b1)
+void A::swap(B b1)
 {
-    if (a > b1.b)
-        cout << a << " is maximum" << endl;
-    else
-        cout << b1.b << " is maximum" << endl;
+    int temp;
+    temp = a;
+    a = b1.b;
+    b1.b = temp;
+    cout << " A = " << a << endl;
+    cout << "B = " << b1.b << endl;
 }
 int main()
 {
@@ -48,6 +50,7 @@ int main()
     b1.input();
     a1.display();
     b1.display();
-    a1.max(b1);
+    a1.swap(b1);
+    cout << "after swap" << endl;
     return 0;
 }
