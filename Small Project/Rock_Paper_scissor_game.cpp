@@ -7,23 +7,26 @@ int main()
     int u;
     srand(time(0));
     int n = rand() % 3 + 1;
-    cout << "Enter '1' for scissors,'2' for rock,'3'for paper" << endl;
+    cout << "Enter :" << endl
+         << "1 for scissors" << endl
+         << "2 for rock" << endl
+         << "3 for paper" << endl;
     cin >> u;
     if (u == n)
     {
         if (u == 1)
         {
-            cout << "you both picked scissors" << endl;
+            cout << "You both picked scissors " << endl;
             cout << "Draw" << endl;
         }
         else if (u == 2)
         {
-            cout << "you both picked Rock" << endl;
+            cout << "You both picked Rock " << endl;
             cout << "Draw" << endl;
         }
         else if (u == 3)
         {
-            cout << "you both picked paper" << endl;
+            cout << "You both picked paper " << endl;
             cout << "Draw" << endl;
         }
     }
@@ -44,7 +47,7 @@ int main()
     {
         cout << "You picked Rock" << endl;
         cout << "Computer picked Scissors" << endl;
-        cout << "you win" << endl;
+        cout << "You win" << endl;
     }
     else if (u == 2 && n == 3)
     {
@@ -62,7 +65,7 @@ int main()
     {
         cout << "You picked Paper" << endl;
         cout << "Computer picked rock" << endl;
-        cout << "you win" << endl;
+        cout << "You win" << endl;
     }
     else
     {
