@@ -1,7 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
 using namespace std;
-char Table[3][3] = {{45, 45, 45}, {45, 45, 45}, {45, 45, 45}};
+char Table[3][3] = {{45,45,45}, {45, 45, 45}, {45, 45, 45}};
 char name1[50], name2[50];
 char choice1, choice2;
 
