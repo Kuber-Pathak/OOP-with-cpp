@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-#include <conio.h>
 class Area
 {
   float a, r;
@@ -26,6 +25,5 @@ int main()
   A.input();
   float c = A.calculate();
   A.display(c);
-  getch();
   return 0;
 }
