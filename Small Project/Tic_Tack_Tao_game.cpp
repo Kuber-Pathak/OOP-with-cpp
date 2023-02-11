@@ -104,9 +104,6 @@ void display()
     cout << "  |     |" << endl;
     cout << Table[2][0] << " |  " << Table[2][1] << "  | " << Table[2][2] << endl;
 }
-void input()
-{
-}
 int main()
 {
     int r1, c1, r2, c2;
