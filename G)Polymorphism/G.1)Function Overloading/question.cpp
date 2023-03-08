@@ -3,8 +3,8 @@
 using namespace std;
 void compute(int ft1, int inch1, int ft2, int inch2)
 {
-    int distance1 = ft1 + inch1 / 12;
-    int distance2 = ft2 + inch2 / 12;
+    float distance1 = ft1 + inch1 / 12;
+    float distance2 = ft2 + inch2 / 12;
     if (distance1 > distance2)
     {
         cout << "City 1 is farther than city 2 from specific location" << endl;
